@@ -13,7 +13,6 @@ import {
 
 import { checkerZipCodeMidd } from "../../../middlewares/contacts/middlewareCheckerzipcode";
 import { checkerEmailMiddZiP } from "../../../middlewares/contacts/middlewareCheckeremail";
-import { checkerIdMidd } from "../../../middlewares/clients/midlewareCheckeridexists";
 import { checkerTokenValidMidd } from "../../../middlewares/login/midlewarews.token";
 import { updateCheckerNotAdmin } from "../../../middlewares/clients/midlewareAdmin";
 import { checkerIdMiddContact } from "../../../middlewares/clients/midlewaresCheckerid";

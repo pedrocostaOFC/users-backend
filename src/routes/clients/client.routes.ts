@@ -11,7 +11,7 @@ import {
   updatedClientsSchemaRequest,
 } from "../../schemas/schemasClients/schemaClients";
 import { checkerEmailMidd } from "../../middlewares/clients/midlewareCheckeremail";
-import { checkerIdMidd } from "../../middlewares/clients/midlewareCheckeridexists";
+import { checkerIdMidClient } from "../../middlewares/clients/midlewareCheckeridexists";
 import { checkerTokenValidMidd } from "../../middlewares/login/midlewarews.token";
 import { updateCheckerNotAdmin } from "../../middlewares/clients/midlewareAdmin";
 export const clientsRoutes: Router = Router();
@@ -29,7 +29,7 @@ clientsRoutes.post(
 clientsRoutes.patch(
 
   "/:id",
-  checkerIdMidd,
+  checkerIdMidClient,
 
   checkerBodyValid(updatedClientsSchemaRequest),
 
@@ -47,7 +47,7 @@ clientsRoutes.delete(
 
   "/:id",
 
-  checkerIdMidd,
+  checkerIdMidClient,
 
   checkerTokenValidMidd,
 
